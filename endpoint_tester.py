@@ -52,42 +52,6 @@ def getendtest(endpoints):
     return end
 
 
-def postendtest(endpoints, data):
-    import requests
-    def end(func):
-        @wraps(func)
-        def wrapper(*args, **kwargs):
-            if len(endpoints) != len(data):
-               assert "Unmatched Lengths of endpoint and data"
-
-            try:
-                url = kwargs['url']
-                main_response = requests.get(url=url)
-            except KeyError:
-                assert "Invalid default parameter. Use 'url' as your default parameter."
-            except ConnectionError:
-                assert "Unresponsive base Url..."
-            log = dict()
-
-            @timer(True)
-            def responser(url):
-                return requests.get(url=url)
-
-            with ThreadPoolExecutor(max_workers=len(endpoints)) as exe:
-                processes = list()
-                for endpoint in endpoints:
-                    processes.append(exe.submit(responser, url+endpoint))
-
-                for i, (future, endpoint) in enumerate(zip(processes, endpoints)):
-                    log[i] = dict()
-                    log[i]['endpoint'] = endpoint
-                    log[i]['execution_time'] = future.result()[1]
-                    response = future.result()[0]
-                    log[i]['response_code'] = response.status_code
-                    log[i]['content'] = response.content
-            return log
-        return wrapper
-    return end
 
 
 

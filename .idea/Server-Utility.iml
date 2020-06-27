@@ -4,7 +4,7 @@
     <content url="">
       <excludeFolder url="file://$MODULE_DIR$/env" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (utility)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (Server_Utility)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
