@@ -1,5 +1,6 @@
 from functools import wraps
 from concurrent.futures import ThreadPoolExecutor
+
 """
 log = {
         0:
@@ -17,18 +18,21 @@ log = {
 
 from Timer import timer
 
+
 def getendtest(endpoints):
     import requests
+
     def end(func):
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def wrapper(**kwargs):
             try:
                 url = kwargs['url']
-                main_response = requests.get(url=url)
+                requests.get(url=url)
             except KeyError:
-                assert "Invalid default parameter. Use 'url' as your default parameter."
+                raise Exception("Invalid default parameter. Use 'url' as your default parameter.")
             except ConnectionError:
-                assert "Unresponsive base Url..."
+                raise Exception("Unresponsive base Url...")
+
             log = dict()
 
             @timer(True)
@@ -38,7 +42,7 @@ def getendtest(endpoints):
             with ThreadPoolExecutor(max_workers=len(endpoints)) as exe:
                 processes = list()
                 for endpoint in endpoints:
-                    processes.append(exe.submit(responser, url+endpoint))
+                    processes.append(exe.submit(responser, url + endpoint))
 
                 for i, (future, endpoint) in enumerate(zip(processes, endpoints)):
                     log[i] = dict()
@@ -52,18 +56,15 @@ def getendtest(endpoints):
     return end
 
 
-
-
-
-
-
 if __name__ == '__main__':
     @timer(False)
-    @getendtest(endpoints=['country/India', 'region/Asia', '/update', "country/Germany", "country/Canada", "country/France"])
+    @getendtest(
+        endpoints=['country/India', 'region/Asia', '/update', "country/Germany", "country/Canada", "country/France"])
     def res(url):
         pass
 
-    log = res(url = "https://covid-api-19.glitch.me/api/notildore2020/")
+
+    log = res(url="https://covid-api-19.glitch.me/api/notildore2020/")
     s = 0
     for i in log.values():
         s = s + i['execution_time']
