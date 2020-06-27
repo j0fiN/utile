@@ -66,7 +66,5 @@ if __name__ == '__main__':
 
     log = res(url="https://covid-api-19.glitch.me/api/notildore2020/")
     s = 0
-    for i in log.values():
-        s = s + i['execution_time']
-
+    for i in log.values(): s = s + i['execution_time']
     print("original time = ", s, "sec")
