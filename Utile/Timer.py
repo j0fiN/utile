@@ -1,11 +1,7 @@
-import time
-from functools import wraps
 
 """
 Utility on time.
 """
-
-
 def timer(store, roundoff=10):
     """
     Decorator which print execution time of any function.
@@ -21,6 +17,8 @@ def timer(store, roundoff=10):
         v_foo = "Hello"
         return v_foo + "World"
     """
+    import time
+    from functools import wraps
     def inner_timer(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
