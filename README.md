@@ -1,2 +1,3 @@
-# Server-Utility
-A Python Package which eases your server-side testing.
+# Utile
+A Python Package which speeds up your via unlimited usage of decorators
+
