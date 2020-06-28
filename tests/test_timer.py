@@ -1,5 +1,8 @@
 import unittest
 import time
+import sys
+import pytest
+sys.path.append('..')
 from Utile.Timer import timer
 
 
@@ -14,7 +17,7 @@ class MyTestCase(unittest.TestCase):
         self.assertAlmostEqual(0.5, result, 1)
 
     def test_doc(self):
-        help(timer)
+        timer.__doc__ # pseudo code
 
     @timer(True)
     def sample_1(self):
