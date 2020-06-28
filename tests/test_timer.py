@@ -1,5 +1,6 @@
 import unittest
 import time
+from Utile.Timer import timer
 
 
 class MyTestCase(unittest.TestCase):
