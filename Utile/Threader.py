@@ -1,10 +1,35 @@
-import threading
 from functools import wraps
 from concurrent.futures import ThreadPoolExecutor
-from Timer import timer
 
 
-def threader(funcs, inresult=False):  # {add():[[1, 2, 3], [1, 2, 3]]}
+def threader(funcs, func_result=False):
+    """
+    A Frame-Determined decorator to spring up number of I/O bound tasks.
+
+    Arguments:
+        funcs: dictionary holding all your tasks in form of {my_function:[list of parameters]}
+        func_result: type:boolean True to return function's return value (default=False)
+
+    Returns:
+        return a list of return value(s) of all the the I/O bound tasks(specified in decorator) if func_result = False.
+        Otherwise returns a tuple containing return value and the list respectively
+
+    Example:
+        import requests
+        from Utile.Threader import threader
+        def get_requester(endpoint):
+            return requests.get(f"https://localhost:5000/api{endpoint}").json()
+
+        def open_file(name):
+            TODO:::::::::::
+
+        @threader({get_requester:[["/users/1"], ["/country/India"],["/profile/pic"]],
+                    get_requester:[["/user/1/followers"]]})
+        def foo():
+            pass
+        foo()
+
+    """
 
     def th(func):
 
@@ -12,7 +37,8 @@ def threader(funcs, inresult=False):  # {add():[[1, 2, 3], [1, 2, 3]]}
         def wrapper(*args, **kwargs):
 
             workers = 0
-            for arg in funcs.values(): workers = workers + len(arg)
+            for arg in funcs.values():
+                workers = workers + len(arg)
 
             with ThreadPoolExecutor(max_workers=workers) as exe:
                 def processes():
@@ -30,7 +56,7 @@ def threader(funcs, inresult=False):  # {add():[[1, 2, 3], [1, 2, 3]]}
                     except TimeoutError:
                         raise Exception("Time Limit Exceeded...")
 
-                if inresult is True:
+                if func_result is True:
                     return func(*args, **kwargs), results
                 else:
                     return results
