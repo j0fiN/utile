@@ -27,7 +27,7 @@ def timer(store=False, roundoff=10):
             finish_time = time.time()
             if store is False:
                 print('=' * 100)
-                print("Response executed in : %s s" % round((finish_time - start_time), roundoff))
+                print(f"{func.__name__} function executed in : %s s" % round((finish_time - start_time), roundoff))
                 print('=' * 100)
                 print('\n')
                 return value
