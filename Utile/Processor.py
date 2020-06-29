@@ -34,29 +34,46 @@ def processor(funcs, inresult=False): # {add():[[1, 2, 3], [1, 2, 3]]}
     return proc
 
 
-de
+def manyprocessor(funcs): # {funcs:[[], [], []]}
+
+    def mproc(func):
+
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            with ProcessPoolExecutor() as exe:
+                processes = list()
+                results = list()
+                s = time.time()
+                arg = funcs[list(funcs.keys())[0]]
+                for i in arg:
+                    processes.append(exe.submit(list(funcs.keys())[0], *i))
+                for process in processes:
+                    results.append(process.result())
+                f = time.time()
+                print(results, " = ", f-s)
+                return results
+        return wrapper
+    return mproc
+
+
 
 
 
 if __name__ == '__main__':
 
-
-    def res(url):
-        import requests as r
-        return r.get(url=url)
-
-
-    @processor({time.sleep: [[1], [1]]})
+    @timer()
+    @manyprocessor({pow:[[123, 321] for _ in range(1000)
+                         ]})
     def foo(): pass
+    foo()
 
     @timer()
-    def fooer(): foo()
+    def fooer():
+        for i in range(1000):
+            pow(123, 321)
     fooer()
-
-    @timer()
-    def qwer():
-        time.sleep(2)
-    qwer()
+    # import os
+    # print(int(os.environ["NUMBER_OF_PROCESSORS"]))
 
 
 
