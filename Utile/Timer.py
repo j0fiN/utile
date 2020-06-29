@@ -2,7 +2,7 @@
 """
 Utility on time.
 """
-def timer(store, roundoff=10):
+def timer(store=False, roundoff=10):
     """
     Decorator which print execution time of any function.
     Can be used to measure the response time of a http request.

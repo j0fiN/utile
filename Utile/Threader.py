@@ -4,12 +4,13 @@ from concurrent.futures import ThreadPoolExecutor
 from Timer import timer
 
 
-def threader(funcs, inresult = False):  # {add():[[1, 2, 3], [1, 2, 3]]}
+def threader(funcs, inresult=False):  # {add():[[1, 2, 3], [1, 2, 3]]}
 
     def th(func):
 
         @wraps(func)
         def wrapper(*args, **kwargs):
+
             workers = 0
             for arg in funcs.values(): workers = workers + len(arg)
 
@@ -22,28 +23,20 @@ def threader(funcs, inresult = False):  # {add():[[1, 2, 3], [1, 2, 3]]}
                             else:
                                 yield exe.submit(i, *k)
 
-                # print(list(processes()))
                 results = list()
                 for process in processes():
                     try:
-                        # TODO:Remove 120
-                        results.append(process.result(timeout=120))
+                        results.append(process.result())
                     except TimeoutError:
                         raise Exception("Time Limit Exceeded...")
-            if inresult is True:
-                return func(*args, **kwargs), results
-            else:
-                return results
+
+                if inresult is True:
+                    return func(*args, **kwargs), results
+                else:
+                    return results
         return wrapper
     return th
 
 
 if __name__ == '__main__':
-    import math
-    def ad(c, a=1, b=2, d=None):
-        return a, b, c, d
-
-    @timer(store=False)
-    @threader({pow: [[100, 200]], ad: [{'a': 1, 'b': 3, 'c':1}], ad: [[0]]})
-    def foo(): pass
-    foo()
+    pass
