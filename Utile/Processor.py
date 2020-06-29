@@ -34,6 +34,9 @@ def processor(funcs, inresult=False): # {add():[[1, 2, 3], [1, 2, 3]]}
     return proc
 
 
+de
+
+
 
 if __name__ == '__main__':
 
