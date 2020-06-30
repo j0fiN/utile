@@ -1,3 +1,3 @@
 # Utile
-A Python Package which speeds up your via unlimited usage of decorators
+The python package which eases your ```<codeflow>``` using `@decorators`.
 
