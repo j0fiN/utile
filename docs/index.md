@@ -42,3 +42,10 @@ The ``@threader()`` decorator takes in a frame-determined structure of all your 
 and returns the list of all the return values of the tasks. It's that simple!  
 We take care of all your ThreadPooling and you do your work!
 
+## Contribution
+Want to make some complex process fast and easy using decorators, feel free to [contribute](https://github.com/).
+
+## Licences
+The code in this project is licensed under MIT license. See [LICENSE](https://github.com/j0fiN/Server_Utility/blob/master/LICENSE) for more information.
+
+
