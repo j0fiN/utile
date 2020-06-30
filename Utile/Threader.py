@@ -7,26 +7,27 @@ def threader(funcs, func_result=False):
     A Frame-Determined decorator to spring up number of I/O bound tasks.
 
     Arguments:
-        funcs: dictionary holding all your tasks in form of {my_function:[list of parameters]}
-        func_result: type:boolean True to return function's return value (default=False)
+        funcs: dictionary holding all your tasks in form of {my_function:[list of parameters]}.
+        func_result: type:boolean True to return function's return value (default=False).
 
     Returns:
         return a list of return value(s) of all the the I/O bound tasks(specified in decorator) if func_result = False.
-        Otherwise returns a tuple containing return value and the list respectively
+        Otherwise returns a tuple containing return value and the list respectively.
 
     Example:
         import requests
         from Utile.Threader import threader
+
         def get_requester(endpoint):
-            return requests.get(f"https://localhost:5000/api{endpoint}").json()
+            return requests.get(f"https://localhost:5000/api{endpoint}").json() # A sample Api request
 
         def open_file(name):
-            TODO:::::::::::
+            with open(name, "r") as open_file: # A sample file reader
+                return open_file.read()
 
-        @threader({get_requester:[["/users/1"], ["/country/India"],["/profile/pic"]],
-                    get_requester:[["/user/1/followers"]]})
-        def foo():
-            pass
+        @threader({get_requester: [["/users/1"], ["/country/India"], ["/profile/pic"]],
+                   open_file: [["text.txt"]]})
+        def foo(): pass
         foo()
 
     """
@@ -62,7 +63,3 @@ def threader(funcs, func_result=False):
                     return results
         return wrapper
     return th
-
-
-if __name__ == '__main__':
-    pass
