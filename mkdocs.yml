@@ -2,3 +2,4 @@ site_name: Utile
 nav:
   - Home: index.md
 
+theme: readthedocs
