@@ -1,8 +1,7 @@
-import time
-from functools import wraps
-
 
 def timer(store=False, round_off=10):
+    import time
+    from functools import wraps
     """
     Decorator which print execution time of any function.
 

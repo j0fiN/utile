@@ -1,8 +1,7 @@
-from functools import wraps
-from concurrent.futures import ThreadPoolExecutor
-
 
 def threader(funcs, func_result=False):
+    from functools import wraps
+    from concurrent.futures import ThreadPoolExecutor
     """
     A Frame-Determined decorator to spring up number of I/O bound tasks.
 
