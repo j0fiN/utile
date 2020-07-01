@@ -15,7 +15,7 @@ Function's return value if `store = False`.
 > **A Frame-Determined decorator to spring up number of I/O bound tasks.**
 
 ##### Arguments:
-**funcs:** type: **dict** holding all your tasks in form of `{my_function: [list of parameters]}`.  
+**funcs:** type: **dict** holding all your tasks in form of `{my_function: [[] of parameters]}`.  
 **func_result:** type: **boolean** `True` to return function's return value.
 
 ##### Returns:
@@ -26,7 +26,7 @@ Function's return value if `store = False`.
 > **A Frame-Determined decorator to spring up number of CPU bound tasks.**
 
 ###### Arguments:
-**funcs:** type: **dict** holding all your tasks in form of `{my_function: [list of parameters]}`.  
+**funcs:** type: **dict** holding all your tasks in form of `{my_function: [[] of parameters]}`.  
 **func_result:** type: **boolean** `True` to return function's return value.  
 **get_result:** type: **boolean** `True` to return the MapResult object values (process becomes little slow than usual).
 
