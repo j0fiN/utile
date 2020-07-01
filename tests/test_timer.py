@@ -8,12 +8,11 @@ from Utile.Timer import timer
 class MyTestCase(unittest.TestCase):
 
     def test_returns_1(self):
-        # self.sample_2()
         self.assertAlmostEqual(0.5, self.sample_2()[1], 1)
 
     def test_returns_2(self):
-        result = self.sample_1()[1]
-        self.assertAlmostEqual(0.5, result, 1)
+        result = self.sample_1()
+        self.assertEqual(str(type(result)), "<class 'tuple'>")
 
 
     @timer(True)
