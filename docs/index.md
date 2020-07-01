@@ -64,9 +64,10 @@ and returns the list of all the return values of the tasks.
 
 > It's that simple! We take care of all your Pooling and you do your work!
 
-For more Information, go to the [Documentation](http://127.0.0.1:8000/documentation/).
+[Documentation](http://127.0.0.1:8000/documentation/) for details.
 ## Contribution
-Want to make some complex process fast and easy using decorators, feel free to [contribute](https://github.com/).
+We encourage all the viewers who come up with new ideas using decorators  
+to [contribute](https://github.com/) and collaborate.
 
 ## Licences
 The code in this project is licensed under MIT license. See [LICENSE](https://github.com/j0fiN/Server_Utility/blob/master/LICENSE) for more information.
