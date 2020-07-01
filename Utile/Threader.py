@@ -10,7 +10,7 @@ def threader(funcs, func_result=False):
         func_result: type:boolean True to return function's return value (default=False).
 
     Returns:
-        return a list of return value(s) of all the the I/O bound tasks(specified in decorator) if func_result = False.
+        return a list of return value(s) of all the I/O bound tasks(specified in decorator) if func_result = False.
         Otherwise returns a tuple containing return value and the list respectively.
 
     Example:
