@@ -17,7 +17,7 @@ def processor(funcs, func_result=False, get_result=False):
 
 
         def power(a, b):
-            return pow(a, b)  # a sample method for CPU  bound task
+            return pow(a, b)        # a sample method for computational task
 
 
         if __name__ == "__main__":  # important to ensure this.
