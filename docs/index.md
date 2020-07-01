@@ -33,13 +33,10 @@ import requests
 from Utile.Threader import threader
 
 
-def open_file(name):
-    with open(name, "r") as open_file: # A sample file reader
-        return open_file.read()
+def get_requester(endpoint):
+    return requests.get(f"https://localhost:5000/api/{endpoint}").text # sample GET request
 
-# Create two text files 'text_1.txt' and 'text_2.txt' before you copy this snippet
-
-@threader({open_file: [["text_1.txt"], ["text_2.txt"]]})
+@threader({get_requester: [["user/1"], ["user/1/followers"]]})
 def foo(): pass
 foo()
 ``` 
