@@ -17,7 +17,7 @@ def threader(funcs, func_result=False):
 
 
         def get_requester(endpoint):
-            return requests.get(f"https://localhost:5000/api{endpoint}").json() # A sample Api request
+            return requests.get(f"https://localhost:5000/api{endpoint}").text # A sample Api request
 
 
         def open_file(name):
