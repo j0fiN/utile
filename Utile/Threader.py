@@ -15,12 +15,15 @@ def threader(funcs, func_result=False):
         import requests
         from Utile.Threader import threader
 
+
         def get_requester(endpoint):
             return requests.get(f"https://localhost:5000/api{endpoint}").json() # A sample Api request
+
 
         def open_file(name):
             with open(name, "r") as open_file: # A sample file reader
                 return open_file.read()
+
 
         @threader({get_requester: [["/users/1"], ["/country/India"], ["/profile/pic"]],
                    open_file: [["text.txt"]]})
