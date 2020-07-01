@@ -48,15 +48,3 @@ def processor(funcs, func_result=False, get_result=False):
         return wrapper
 
     return proc
-
-
-def power(a, b):
-    return pow(a, b)  # a sample method for CPU  bound task
-
-
-if __name__ == "__main__":  # important to ensure this.
-    @processor({power: [[123, 321] for _ in range(1000)]})
-    def foo(): pass
-
-
-    print(foo())
