@@ -4,8 +4,8 @@ def timer(store=False, round_off=10):
     Decorator which print execution time of any function.
 
     Arguments:
-        store:  storing your execution time(True) or just print it(default=False).
-        round_off: decimals to round off the execution time (default is 10).
+        store:  storing your execution time(store=True) or just print it.
+        round_off: decimals to round off the execution time (default=10).
 
     Returns:
         Tuple containing return value and the execution time if store=True.
