@@ -4,7 +4,7 @@
 > **Decorator which print execution time of any function.**
 
 ##### Arguments:
-**store:**  storing your execution time(`store = True`) or just print it (`store = False`).  
+**store:**  storing your execution time (`store = True`) or just print it (`store = False`).  
 **round_off:** decimals to round off the execution time.
 
 ##### Returns:
@@ -15,23 +15,30 @@ Function's return value if `store = False`.
 > **A Frame-Determined decorator to spring up number of I/O bound tasks.**
 
 ##### Arguments:
-**funcs:** type: **dict** holding all your tasks in form of `{my_function: [[] of parameters]}`.  
+**funcs:** type: **dict** holding all your task(s) in form of `{my_function: [[] of parameters]}`.  
 **func_result:** type: **boolean** `True` to return function's return value.
 
 ##### Returns:
-**List** of return value(s) of all the I/O bound tasks (specified within decorator) if `func_result = False`.  
+**List** of return value(s) of all the I/O bound task(s) (specified within decorator) if `func_result = False`.  
 **Tuple** containing function's return value and the list respectively if `func_result = True`.
 ---
 ## @Processor.processor(funcs, func_result=False, get_result=False)
 > **A Frame-Determined decorator to spring up number of CPU bound tasks.**
 
 ###### Arguments:
-**funcs:** type: **dict** holding all your tasks in form of `{my_function: [[] of parameters]}`.  
+**funcs:** type: **dict** holding all your task(s) in form of `{my_function: [[] of parameters]}`.  
 **func_result:** type: **boolean** `True` to return function's return value.  
-**get_result:** type: **boolean** `True` to return the MapResult object values (process becomes little slow than usual).
+**get_result:** type: **boolean** `True` to return the MapResult object value(s) (process becomes a little slow).
 
 ##### Returns:
-**List** of MapResult object(s) of all the CPU bound tasks with values if `get_result = False` (specified within decorator) 
+**List** of MapResult object(s) of all the CPU bound task(s) with values if `get_result = False` (specified within decorator) 
 and `func_result = False`.  
-Values of CPU bound tasks if `get_result = True`.  
-**Tuple** containing return value(s) and the list respectively if `func_result = True`.
+Values of CPU bound task(s) if `get_result = True`.  
+**Tuple** containing function's return value and the list respectively if `func_result = True`.
+---
+Examples can found [here]().  
+
+**NOTE:**  
+- Pure concurrency is a limitation in Python.
+- Stacking of decorators may lead to inconsistency and lack of speed.   
+- Please read the [Guidelines]() before using the package.
