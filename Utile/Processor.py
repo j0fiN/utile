@@ -1,3 +1,4 @@
+
 def processor(funcs, func_result=False, get_result=False):
     """
     A Frame-Determined decorator to spring up number of CPU bound tasks.
