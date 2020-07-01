@@ -2,7 +2,7 @@ import unittest
 import time
 import sys
 sys.path.append('..')
-from Utile.Timer import timer
+from Utile.Timer import timer # noqa
 
 
 class MyTestCase(unittest.TestCase):
@@ -14,7 +14,6 @@ class MyTestCase(unittest.TestCase):
         result = self.sample_1()
         self.assertEqual(str(type(result)), "<class 'tuple'>")
 
-
     @timer(True)
     def sample_1(self):
         time.sleep(0.5)
@@ -24,7 +23,6 @@ class MyTestCase(unittest.TestCase):
     def sample_2(self):
         time.sleep(0.5)
         return None
-
 
 
 if __name__ == '__main__':
