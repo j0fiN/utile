@@ -2,16 +2,17 @@
 def processor(funcs, func_result=False, get_result=False):
     """
     A Frame-Determined decorator to spring up number of CPU bound tasks.
-    
+
     Arguments:
-        funcs: dictionary holding all your tasks in form of {my_function:[list of parameters]}.
-        func_result: type:boolean True to return function's return value (default=False).
-        get_result: type:boolean True to return the MapResult object values (process becomes little slow)(default=False)
-        
+        funcs: type: dict holding all your task(s) in form of {my_function: [[] of parameters]}.
+        func_result: type: boolean True to return function's return value.
+        get_result: type: boolean True to return the MapResult object value(s) (process becomes a little slow).
+
     Returns:
-        return a list of MapResult object(s)(with values if get_result=True) of all the CPU bound 
-        tasks(specified in decorator) if func_result = False. Otherwise returns a tuple containing return value(s) 
-        and the list respectively.
+        List of MapResult object(s) of all the CPU bound task(s) with values if get_result = False
+        (specified within decorator) and func_result = False.
+        Values of CPU bound tasks if get_result = True.
+        Tuple containing return value and the list respectively if func_result = True.
         
     Examples:
         from Utile.Processor import processor

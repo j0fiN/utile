@@ -4,11 +4,11 @@ def threader(funcs, func_result=False):
     A Frame-Determined decorator to spring up number of I/O bound tasks.
 
     Arguments:
-        funcs: type: dict holding all your tasks in form of {my_function: [[] of parameters]}.
+        funcs: type: dict holding all your task(s) in form of {my_function: [[] of parameters]}.
         func_result: type: boolean True to return function's return value.
 
     Returns:
-        List of return value(s) of all the I/O bound tasks (specified within decorator) if func_result = False.
+        List of return value(s) of all the I/O bound task(s) (specified within decorator) if func_result = False.
         Tuple containing function's return value and the list respectively if func_result = True.
 
     Example:
