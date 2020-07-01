@@ -5,7 +5,7 @@ def threader(funcs, func_result=False):
 
     Arguments:
         funcs: dictionary holding all your tasks in form of {my_function:[list of parameters]}.
-        func_result: type:boolean True to return function's return value (default=False).
+        func_result: type:boolean True to return function's return value.
 
     Returns:
         return a list of return value(s) of all the I/O bound tasks(specified in decorator) if func_result = False.
