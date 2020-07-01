@@ -64,7 +64,7 @@ and returns the list of all the return values of the tasks.
 
 > It's that simple! We take care of all your Pooling and you do your work!
 
-[Documentation](http://127.0.0.1:8000/documentation/) for details.
+For more information, see [Documentation](http://127.0.0.1:8000/documentation/).
 ## Contribution
 We encourage all the viewers who come up with new ideas using decorators  
 to [contribute](https://github.com/) and collaborate.
