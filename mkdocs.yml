@@ -2,4 +2,6 @@ site_name: Utile
 nav:
   - Home: index.md
   - Documentation: documentation.md
+  - Examples: examples.md
+  - GuideLines: guidelines.md
 theme: readthedocs
