@@ -1,5 +1,5 @@
 site_name: Utile
 nav:
   - Home: index.md
-
+  - Documentation: documentation.md
 theme: readthedocs
