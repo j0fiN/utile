@@ -1,7 +1,5 @@
 
 def timer(store=False, round_off=10):
-    import time
-    from functools import wraps
     """
     Decorator which print execution time of any function.
 
@@ -21,6 +19,9 @@ def timer(store=False, round_off=10):
             time.sleep(1) # function sleeping for 1 second
         foo()
     """
+    import time
+    from functools import wraps
+
     def inner_timer(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
