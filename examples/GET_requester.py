@@ -1,3 +1,10 @@
+# Example - 1
+# This example shows a simple multi-threading process using threader
+# decorator along with brute force function too.
+# NOTE: Sometimes even I/O bound tasks work slower than brute force
+# when using threading, depending on the PC. Use processor at those times.
+# This example needs the requests module so send GET requests.
+
 import requests
 import sys
 
@@ -28,5 +35,5 @@ def brute_force():
         get_requester(endpoint)
 
 
-brute_force()
+# brute_force()
 base()
