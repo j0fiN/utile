@@ -50,22 +50,10 @@ def gnb_modeler():
 @processor({knc_modeler: [[]],
             svc_modeler: [[]],
             rfc_modeler: [[]],
-            gnb_modeler: [[]]}, get_result=True)
+            gnb_modeler: [[]]})
 def fitter():
     pass
 
 
-@timer()
-def brute_force():
-    brute_result = list()
-    models = [KNeighborsClassifier(n_neighbors=5), SVC(), RandomForestClassifier(n_estimators=10), GaussianNB()]
-    for mod in models:
-        model = mod
-        model.fit(X_train, y_train)
-        brute_result.append(model.score(X_test, y_test))
-    return brute_result
-
-
 if __name__ == '__main__':
     result = fitter()
-    print(brute_force())

@@ -32,14 +32,5 @@ def base():
     pass
 
 
-@timer()
-def brute_force():
-    endpoints = ['https://unsplash.com/photos/A-NVHPka9Rk/download?force=true&w=640',
-                 'https://unsplash.com/photos/A-NVHPka9Rk/download?force=true&w=1920'
-                 'https://unsplash.com/photos/A-NVHPka9Rk/download?force=true&w=2400']
-    for endpoint in endpoints:
-        get_requester(endpoint)
-
-
 # brute_force()
 base()
