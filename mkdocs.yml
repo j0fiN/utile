@@ -1,4 +1,4 @@
-site_name: Utile
+site_name: utile
 nav:
   - Home: index.md
   - Documentation: documentation.md

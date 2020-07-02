@@ -2,7 +2,7 @@ import unittest
 import time
 import sys
 sys.path.append('..')
-from Utile.Timer import timer # noqa
+from utile.Timer import timer # noqa
 
 
 class MyTestCase(unittest.TestCase):

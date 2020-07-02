@@ -2,8 +2,8 @@ import unittest
 import sys
 
 sys.path.append('..')
-from Utile.Threader import threader  # noqa
-from Utile.Timer import timer  # noqa
+from utile.Threader import threader  # noqa
+from utile.Timer import timer  # noqa
 
 
 def sample_file_reader(name):

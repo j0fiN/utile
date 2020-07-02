@@ -1,15 +1,15 @@
-# Utile
-![Utile-Logo](Utile_logo2.png)
+# utile
+![utile-Logo](Utile_logo2.png)
 ---
 *The python package which eases your ```<codeflow>``` using `@decorators`.*
   
 ---
 ## Installation
 Install with:  
-```pip install Utile```
+```pip install utile```
 
 For [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb)  
-```!pip install Utile```
+```!pip install utile```
 ## The art of using decorators
 Decorators is one of the many concepts which makes Python programming amazing. The key usage 
 of decorators is to modify the functionality or state (behavior) of a function. This package brings out a relatively 
@@ -22,7 +22,7 @@ This (according to us) eases intricate function designing.
 #### @timer() decorator
 To compute execution time of a function:
 ```python
-from Utile.Timer import timer
+from utile.Timer import timer
 import time
 
 @timer()
@@ -32,14 +32,14 @@ foo()
 ```
 This will show the execution time(in seconds) irrespective of any print statements.
 
-### Key features of Utile
+### Key features of utile
 
 #### @threader() decorator
 Provides an easy way to run multiple I/O bound tasks with no hassle of thread pools.
 Everything is done for you!
 ```python
 import requests
-from Utile.Threader import threader
+from utile.Threader import threader
 
 
 def get_requester(endpoint):
@@ -56,7 +56,7 @@ and returns the list of all the return values of the tasks.
 Provides an easy way to run multiple computational tasks with no hassle of Process pools.
 Again, Everything is done for you!  
 ```python
-from Utile.Processor import processor
+from utile.Processor import processor
 
 
 def power(a, b):

@@ -1,6 +1,6 @@
 
 
-name: CI-Utile
+name: CI-utile
 
 
 on:
@@ -19,8 +19,8 @@ jobs:
     - uses: actions/checkout@v2
 
     # Introduction
-    - name: Utile building
-      run: echo Utile will be ready soon...
+    - name: utile building
+      run: echo utile will be ready soon...
 
     # Runs test
     - name: Running tests

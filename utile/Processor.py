@@ -15,7 +15,7 @@ def processor(funcs, func_result=False, get_result=False):
         Tuple containing return value and the list respectively if func_result = True.
         
     Examples:
-        from Utile.Processor import processor
+        from utile.Processor import processor
 
 
         def power(a, b):
@@ -34,7 +34,7 @@ def processor(funcs, func_result=False, get_result=False):
     def proc(func):
         @wraps(func)
         def wrapper(*args, **kwargs):
-            if __name__ == 'Utile.Processor' or __name__ == 'Processor':
+            if __name__ == 'utile.Processor' or __name__ == 'Processor':
                 with Pool(int(os.environ["NUMBER_OF_PROCESSORS"])) as exe:
                     processes = list()
                     for (i, j) in zip(funcs.keys(), funcs.values()):

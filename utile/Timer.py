@@ -12,7 +12,7 @@ def timer(store=False, round_off=10):
         Function's value if store=False.
 
     Example:
-        from Utile.Timer import timer
+        from utile.Timer import timer
         import time
         @timer()
         def foo():

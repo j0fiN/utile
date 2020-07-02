@@ -13,7 +13,7 @@ def threader(funcs, func_result=False):
 
     Example:
         import requests
-        from Utile.Threader import threader
+        from utile.Threader import threader
 
 
         def get_requester(endpoint):

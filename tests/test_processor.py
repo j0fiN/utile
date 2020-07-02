@@ -2,8 +2,8 @@ import unittest
 import sys
 
 sys.path.append('..')
-from Utile.Processor import processor  # noqa
-from Utile.Timer import timer  # noqa
+from utile.Processor import processor  # noqa
+from utile.Timer import timer  # noqa
 
 
 class MyTestCase(unittest.TestCase):
