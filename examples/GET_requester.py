@@ -1,9 +1,15 @@
 # Example - 1
 # This example shows a simple multi-threading process using threader
 # decorator along with brute force function too.
-# NOTE: Sometimes even I/O bound tasks work slower than brute force
-# when using threading, depending on the PC. Use processor at those times.
-# This example needs the requests module so send GET requests.
+#
+# NOTE:
+# * Sometimes even I/O bound tasks work slower than brute force
+#   when using threading, depending on the PC. Use processor at those times.
+#
+# * This example needs the requests module so send GET requests.
+#
+# * The links used in this example is from https://unsplash.com/
+#   No permission is needed for using them.
 
 import requests
 import sys
