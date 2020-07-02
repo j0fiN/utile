@@ -1,0 +1,30 @@
+
+
+name: CI-Utile
+
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    # Introduction
+    - name: Utile building
+      run: echo Utile under developement phase...
+
+    # Runs test
+    - name: Running tests
+      run: |
+        echo Building...
+        cd tests
+        python -m unittest
