@@ -39,7 +39,7 @@ def processor(funcs, func_result=False, get_result=False):
                     processes = list()
                     for (i, j) in zip(funcs.keys(), funcs.values()):
                         if get_result is False:
-                            processes.append(exe.starmap_async(i, j))
+                            exe.starmap_async(i, j).get()
                         else:
                             processes.append(exe.starmap_async(i, j).get())
                     if func_result is False:
