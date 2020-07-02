@@ -1,5 +1,6 @@
 # Utile
-
+![Utile-Logo](Utile_logo2.png)
+---
 *The python package which eases your ```<codeflow>``` using `@decorators`.*
   
 ---
@@ -9,6 +10,14 @@ Install with:
 
 For [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb)  
 ```!pip install Utile```
+## The art of using decorators
+Decorators is one of the many concepts which makes Python programming amazing. The key usage 
+of decorators is to modify the functionality or state (behavior) of a function. This package brings out a relatively 
+new concept of
+**Function Foundation**.  
+Function Foundation is a style of programming where a function tends to do nothing and acts like a robust base (or 
+foundation) for decorators and these decorators can be made to do sophisticated processes over the idle function.
+This (according to us) eases intricate function designing.
 ## Getting Started
 #### @timer() decorator
 To compute execution time of a function:
