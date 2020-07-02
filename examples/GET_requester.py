@@ -6,7 +6,7 @@
 # * Sometimes even I/O bound tasks work slower than brute force
 #   when using threading, depending on the PC. Use processor at those times.
 #
-# * This example needs the requests module so send GET requests.
+# * This example needs the requests module to send GET requests.
 #
 # * The links used in this example is from https://unsplash.com/
 #   No permission is needed for using them.
