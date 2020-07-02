@@ -20,7 +20,7 @@ jobs:
 
     # Introduction
     - name: Utile building
-      run: echo Utile under developement phase...
+      run: echo Utile will be ready soon...
 
     # Runs test
     - name: Running tests
