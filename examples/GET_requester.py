@@ -1,6 +1,6 @@
 # Example - 1
-# This example shows a simple multi-threading process using threader
-# decorator along with brute force function too.
+# This example shows a simple GET request process using threader
+# decorator.
 #
 # NOTE:
 # * Sometimes even I/O bound tasks work slower than brute force
@@ -13,7 +13,6 @@
 
 import requests
 import sys
-
 sys.path.append("..")
 from utile.Timer import timer  # noqa
 from utile.Threader import threader  # noqa
@@ -32,5 +31,4 @@ def base():
     pass
 
 
-# brute_force()
 base()
