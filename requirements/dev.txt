@@ -1,3 +1,5 @@
 requests
 mkdocs
 sklearn
+BeautifulSoup4
+html5lib
