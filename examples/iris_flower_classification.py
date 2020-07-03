@@ -43,22 +43,26 @@ model_mnb = MultinomialNB()
 
 def knc_modeler():
     model_knc.fit(X_train, y_train)
-    print(model_knc.score(X_test, y_test))
+    value = model_knc.score(X_test, y_test)
+    return value
 
 
 def svc_modeler():
     model_svc.fit(X_train, y_train)
-    print(model_svc.score(X_test, y_test))
+    value = model_svc.score(X_test, y_test)
+    return value
 
 
 def rfc_modeler():
     model_rfc.fit(X_train, y_train)
-    print(model_rfc.score(X_test, y_test))
+    value = model_rfc.score(X_test, y_test)
+    return value
 
 
 def gnb_modeler():
     model_gnb.fit(X_train, y_train)
-    print(model_gnb.score(X_test, y_test))
+    value = model_gnb.score(X_test, y_test)
+    return value
 
 
 @timer()
@@ -71,4 +75,5 @@ def fitter():
 
 
 if __name__ == '__main__':  # important to ensure this.
-    result = fitter()
+    pass          # comment this before running the program
+    # fitter()    # uncomment this before running the program
