@@ -1,7 +1,16 @@
+# Example - 2
+# This example shows web scraping of python blog from
+# https://www.fullstackpython.com/ using beautiful soup python library.
+#
+# NOTE:
+# * Sometimes even I/O bound tasks work slower than brute force
+#   when using threading, depending on the PC. Use processor at those times.
+#
+# * This example needs the requests, beautiful soup and html5lib libraries.
+
 from bs4 import BeautifulSoup
 import requests
 import sys
-
 sys.path.append("..")
 from utile.Threader import threader  # noqa
 from utile.Timer import timer  # noqa
