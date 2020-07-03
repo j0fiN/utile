@@ -1,3 +1,19 @@
+# Example - 2
+# This example shows classification of iris flowers in various
+# estimators using SciKit-Learn library.
+#
+# NOTE:
+# * This example requires sk-learn, numpy libraries.
+#
+# * Objects are not made global within the processor, which means
+#   objects does not change its state globally after passing through
+#   the processor decorator.
+#
+# * To retain the state use get_result=True.
+#
+# * Always check if your program is running directly or by some other module using
+#   `if __name__ == "__main__": ...`.
+
 from sklearn.datasets import load_iris
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
@@ -7,7 +23,6 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.model_selection import KFold
 from sklearn.model_selection import train_test_split
 import numpy as np
-
 import sys
 
 sys.path.append("..")
@@ -55,5 +70,5 @@ def fitter():
     pass
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # important to ensure this.
     result = fitter()
