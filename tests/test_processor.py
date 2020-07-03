@@ -6,7 +6,7 @@ from utile.Processor import processor  # noqa
 from utile.Timer import timer  # noqa
 
 
-class MyTestCase(unittest.TestCase):
+class TestProcessor(unittest.TestCase):
 
     @processor({pow: [[123, 321] for _ in range(10000)]}, func_result=False, get_result=False)
     def sample_p_1(self):

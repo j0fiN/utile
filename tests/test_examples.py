@@ -10,7 +10,7 @@ from examples.python_blog_scrapper import url_finder, scrape_blog, base  # noqa
 unittest.TestLoader.sortTestMethodsUsing = None
 
 
-class MyTestCase(unittest.TestCase):
+class TestExample(unittest.TestCase):
 
     def test_example_1_base(self):
         s = time.time()

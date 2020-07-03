@@ -5,7 +5,7 @@ sys.path.append('..')
 from utile.Timer import timer # noqa
 
 
-class MyTestCase(unittest.TestCase):
+class TestTimer(unittest.TestCase):
 
     def test_returns_1(self):
         self.assertAlmostEqual(0.5, self.sample_2()[1], 2)

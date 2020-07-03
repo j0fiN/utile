@@ -11,7 +11,7 @@ def sample_file_reader(name):
         return reader.read()
 
 
-class MyTestCase(unittest.TestCase):
+class TestThreader(unittest.TestCase):
 
     @threader({sample_file_reader: [["sample_test_text.txt"] for _ in range(1000)]}, func_result=True)
     def sample_t_1(self):
