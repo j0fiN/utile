@@ -32,7 +32,7 @@ def threader(funcs, func_result=False):
 
     """
     from functools import wraps
-    from concurrent.futures import ThreadPoolExecutor
+    from concurrent.futures import ThreadPoolExecutor, as_completed
     def th(func):
 
         @wraps(func)
@@ -52,7 +52,7 @@ def threader(funcs, func_result=False):
                                 yield exe.submit(i, *k)
 
                 results = list()
-                for process in processes():
+                for process in as_completed(processes()):
                     try:
                         results.append(process.result())
                     except TimeoutError:
