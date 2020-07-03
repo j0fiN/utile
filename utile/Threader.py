@@ -1,5 +1,5 @@
 
-def threader(funcs, func_result=False):
+def threader(funcs: dict, func_result: bool = False) -> function:
     """
     A Frame-Determined decorator to spring up number of I/O bound tasks.
 
@@ -33,10 +33,10 @@ def threader(funcs, func_result=False):
     """
     from functools import wraps
     from concurrent.futures import ThreadPoolExecutor, as_completed
-    def th(func):
+    def th(func: function) -> function:
 
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def wrapper(*args: 'arguments', **kwargs: 'keyword arguments') -> function:
 
             workers = 0
             for arg in funcs.values():
