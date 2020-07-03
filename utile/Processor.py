@@ -1,5 +1,5 @@
 
-def processor(funcs, func_result=False, get_result=False):
+def processor(funcs: dict, func_result: bool = False, get_result: bool = False) -> function:
     """
     A Frame-Determined decorator to spring up number of CPU bound tasks.
 
@@ -31,9 +31,9 @@ def processor(funcs, func_result=False, get_result=False):
     import os
     from functools import wraps
 
-    def proc(func):
+    def proc(func: function) -> function:
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def wrapper(*args: 'arguments', **kwargs: 'keyword arguments') -> function:
             if __name__ == 'utile.Processor' or __name__ == 'Processor':
                 with Pool(int(os.environ["NUMBER_OF_PROCESSORS"])) as exe:
                     processes = list()
