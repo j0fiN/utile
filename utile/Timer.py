@@ -1,5 +1,5 @@
 
-def timer(store=False, round_off=10):
+def timer(store: bool = False, round_off: int = 10) -> 'function':
     """
     Decorator which print execution time of any function.
 
@@ -22,9 +22,9 @@ def timer(store=False, round_off=10):
     import time
     from functools import wraps
 
-    def inner_timer(func):
+    def inner_timer(func: 'function') -> 'function':
         @wraps(func)
-        def wrapper(*args, **kwargs):
+        def wrapper(*args: 'arguments', **kwargs: 'keyword arguments') -> 'function':
             start_time = time.time()
             value = func(*args, **kwargs)
             finish_time = time.time()
