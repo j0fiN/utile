@@ -1,4 +1,4 @@
-# Example - 2
+# Example - 3
 # This example shows web scraping of python blog from
 # https://www.fullstackpython.com/ using beautiful soup python library.
 #
