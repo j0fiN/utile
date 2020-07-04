@@ -73,7 +73,7 @@ and returns the list of all the return values of the tasks.
 
 > It's that simple! We take care of all your Pooling processes and you do your work!
 
-For more information, see [Documentation](#).
+For more information, see [Documentation]().
 ## Contribution
 We encourage anyone who comes up with new ideas using decorators  
 to [contribute](https://github.com/j0fiN) and collaborate (do star the repo if you like it !).
