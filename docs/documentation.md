@@ -36,9 +36,9 @@ and `func_result = False`.
 Values of CPU bound task(s) if `get_result = True`.  
 **Tuple** containing function's return value and the list respectively if `func_result = True`.
 ---
-Examples can found [here]().  
+Examples can found [here](http://127.0.0.1:8000/examples/).  
 
 **NOTE:**  
 - Pure concurrency is a limitation in Python.
 - Stacking of decorators may lead to inconsistency and lack of speed.   
-- Please read the [Guidelines]() before using the package.
+- Please read the [Guidelines](http://127.0.0.1:8000/guidelines/) before using the package.
