@@ -8,7 +8,7 @@
 Install with:  
 ```pip install utile```
 
-For [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb)  
+For [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb):  
 ```!pip install utile```
 ## The art of using decorators
 Decorators is one of the many concepts which makes Python programming amazing. The key usage 
@@ -30,7 +30,7 @@ def foo():
     time.sleep(1)
 foo()
 ```
-This will show the execution time(in seconds) irrespective of any print statements.
+This will show the execution time (in seconds) irrespective of any print statements.
 
 ### Key features of utile
 
@@ -53,7 +53,7 @@ The ``@threader()`` decorator takes in a frame-determined structure of all your 
 and returns the list of all the return values of the tasks.
 
 #### @processor decorator
-Provides an easy way to run multiple computational tasks with no hassle of Process pools.
+Provides an easy way to run multiple CPU bound tasks with no hassle of Process pools.  
 Again, Everything is done for you!  
 ```python
 from utile.Processor import processor
@@ -71,12 +71,12 @@ if __name__ == "__main__":  # important to ensure this.
 The ``@processor()`` decorator takes in a frame-determined structure of all your functions along with its arguments
 and returns the list of all the return values of the tasks.
 
-> It's that simple! We take care of all your Pooling and you do your work!
+> It's that simple! We take care of all your Pooling processes and you do your work!
 
-For more information, see [Documentation](http://127.0.0.1:8000/documentation/).
+For more information, see [Documentation](#).
 ## Contribution
-We encourage all the viewers who come up with new ideas using decorators  
-to [contribute](https://github.com/) and collaborate (do star the repo if you like it !).
+We encourage anyone who comes up with new ideas using decorators  
+to [contribute](https://github.com/j0fiN) and collaborate (do star the repo if you like it !).
 
 ## Licences
 The code in this project is licensed under MIT license. See [LICENSE](https://github.com/j0fiN/Server_Utility/blob/master/LICENSE) for more information.
