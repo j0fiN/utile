@@ -43,10 +43,9 @@ estimators using SciKit-Learn library.
 **NOTE:**
 
 - This example requires sk-learn, numpy libraries.
-Objects are not made global within the processor, which means
+ - Objects are not made global within the processor, which means
 objects does not change its state globally after passing through
-the processor decorator.
-- To retain the state use get_result=True.
+the processor decorator. To retain the state use `get_result=True`.
 - Always check if your program is running directly or by some other module using
 `if __name__ == "__main__": ...`.
 ```python
