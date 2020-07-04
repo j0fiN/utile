@@ -17,14 +17,18 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+    with:
+      python-version: '3.x'
+      architecture: 'x64
 
     # Introduction
     - name: utile building
-      run: echo utile will be ready soon...
+      run: echo utile
 
     # Runs test
     - name: Running tests
       run: |
         echo Building...
         cd tests
-        python -m unittest
+        python -m unittest test_processor test_threader test_timer
