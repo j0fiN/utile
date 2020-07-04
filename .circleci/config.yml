@@ -8,8 +8,6 @@ jobs:
     executor: python/default
     steps:
       - checkout
-      - python/load-cache
-      - python/save-cache
       - run: |
          echo CircleCi
          pip install -r requirements/dev.txt
