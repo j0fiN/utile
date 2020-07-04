@@ -32,7 +32,7 @@ class TestProcessor(unittest.TestCase):
 
     def test_1(self):
         result = self.sample_p_1()
-        self.assertEqual(str(type(result[0])), "<class 'multiprocessing.pool.MapResult'>")
+        self.assertEqual(str(type(result)), "<class 'list'>")
 
     def test_2(self):
         result = self.sample_p_2()
