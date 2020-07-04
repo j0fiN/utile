@@ -1,5 +1,5 @@
 # utile
-![utile-Logo](Utile_logo2.png)
+![utile-Logo](utile_logo2.png)
 ---
 *The python package which eases your ```<codeflow>``` using `@decorators`.*
   
