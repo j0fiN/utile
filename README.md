@@ -76,7 +76,7 @@ and returns the list of all the return values of the tasks.
 For more information, see [Documentation](http://127.0.0.1:8000/documentation/).
 ## Contribution
 We encourage all the viewers who come up with new ideas using decorators  
-to [contribute](https://github.com/) and collaborate.
+to [contribute](https://github.com/) and collaborate (do star the repo if you like it !).
 
 ## Licences
 The code in this project is licensed under MIT license. See [LICENSE](https://github.com/j0fiN/Server_Utility/blob/master/LICENSE) for more information.
