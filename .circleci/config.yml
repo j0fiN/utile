@@ -10,6 +10,6 @@ jobs:
       - checkout
       - run: |
          echo CircleCi
-         pip install -r requirements/dev.txt
+         pip install -r requirements/test.txt
          cd tests
          python -m unittest test_examples
