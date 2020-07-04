@@ -35,8 +35,9 @@ def processor(funcs: dict, func_result: bool = False, get_result: bool = False) 
         @wraps(func)
         def wrapper(*args: 'arguments', **kwargs: 'keyword arguments') -> 'function':
             if __name__ == 'utile.Processor' or __name__ == 'Processor':
-                PROCESSORS = os.environ["NUMBER_OF_PROCESSORS"]
-                if PROCESSORS is None:
+                try:
+                    PROCESSORS = os.environ["NUMBER_OF_PROCESSORS"]
+                except KeyError:
                     PROCESSORS = 8
                 with Pool(int(PROCESSORS)) as exe:
                     processes = list()
