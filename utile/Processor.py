@@ -28,14 +28,17 @@ def processor(funcs: dict, func_result: bool = False, get_result: bool = False) 
             print(foo())
     """
     from multiprocessing import Pool
-    import os
     from functools import wraps
+    import os
 
     def proc(func: 'function') -> 'function':
         @wraps(func)
         def wrapper(*args: 'arguments', **kwargs: 'keyword arguments') -> 'function':
             if __name__ == 'utile.Processor' or __name__ == 'Processor':
-                with Pool(int(os.environ["NUMBER_OF_PROCESSORS"])) as exe:
+                PROCESSORS = os.environ["NUMBER_OF_PROCESSORS"]
+                if PROCESSORS is None:
+                    PROCESSORS = 8
+                with Pool(int(PROCESSORS)) as exe:
                     processes = list()
                     for (i, j) in zip(funcs.keys(), funcs.values()):
                         if get_result is False:
