@@ -13,4 +13,4 @@ jobs:
          pip install -r requirements/test.txt
          cd tests
          coverage run test.py
-         coverage
+         codecov
