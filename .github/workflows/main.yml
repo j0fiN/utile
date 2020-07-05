@@ -18,7 +18,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
-
+    - uses: codecov/codecov-action@v1
     # Introduction
     - name: utile building
       run: echo utile
@@ -26,6 +26,11 @@ jobs:
     # Runs test
     - name: Running tests
       run: |
+        pip install coverage
+        pip install codecov
         echo Building...
         cd tests
-        python -m unittest test_processor test_threader test_timer
+        coverage run test_processor.py
+        coverage run test_threader.py
+        coverage run test_timer.py
+        codecov
