@@ -9,8 +9,10 @@ jobs:
     steps:
       - checkout
       - run: |
-         echo CircleCi
-         pip install -r requirements/test.txt
-         cd tests
-         coverage run test_examples.py
-         codecov
+        echo CircleCi
+        pip install -r requirements/test.txt
+        cd tests
+        coverage run test_examples.py
+        coverage run test_processor.py
+        coverage run test_threader.py
+        codecov
