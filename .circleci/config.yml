@@ -13,3 +13,4 @@ jobs:
          pip install -r requirements/test.txt
          cd tests
          python -m unittest test_examples
+         codecov

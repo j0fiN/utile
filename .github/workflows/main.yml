@@ -29,3 +29,4 @@ jobs:
         echo Building...
         cd tests
         python -m unittest test_processor test_threader test_timer
+        codecov
