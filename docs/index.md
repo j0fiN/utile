@@ -74,11 +74,11 @@ The ``@processor()`` decorator takes in a frame-determined structure of all your
 and returns the list of all the return values of the tasks.
 
 > It's that simple! We take care of all your Pooling processes and you do your work!  
-For more information, see [Documentation](http://127.0.0.1:8000/documentation/).
+For more information, see [Documentation](https://utile.readthedocs.io/en/latest/documentation/).
 
 ---
 ## Contribution
 We encourage anyone who come up with new ideas using decorators
-to [contribute](https://github.com/j0fiN) and collaborate (do star the repo if you like it !).
+to [contribute](https://github.com/j0fiN/utile) and collaborate (do star the repo if you like it !).
 
 

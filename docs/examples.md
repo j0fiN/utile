@@ -165,6 +165,7 @@ print(base())
 ---
 ### Notes
 
-- Please see the [Guidelines](http://127.0.0.1:8000/guidelines/) before jumping in.
-- For more dynamic usage of the decorator functions, see [Documentation](http://127.0.0.1:8000/documentation/).
-- Want to add more examples, feel free to [Contribute](https://github.com/j0fiN).
+- Please see the [Guidelines](https://utile.readthedocs.io/en/latest/guidelines/) before jumping in.
+- For more dynamic usage of the decorator functions, see 
+[Documentation](https://utile.readthedocs.io/en/latest/documentation/).
+- Want to add more examples, feel free to [Contribute](https://github.com/j0fiN/utile).

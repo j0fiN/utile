@@ -2,7 +2,8 @@
 #### Introduction
 > ***There are certain things you need to take into account before you use our package.***  
   
-- Have a basic understanding of the concept of *concurrency* and [GIL](https://wiki.python.org/moin/GlobalInterpreterLock) in Python.  
+- Have a basic understanding of the concept of *concurrency* and 
+[GIL](https://wiki.python.org/moin/GlobalInterpreterLock) in Python.  
    
 - The package is a binding over existing libraries of 
 [multiprocessing](https://docs.python.org/3/library/multiprocessing.html), 
@@ -31,8 +32,8 @@ decorator only for I/O bound tasks.
 - Object's state does NOT change globally when using methods in the decorator.
 - Always check if your program is running directly or by some other module using ``if __name__ == "__main__"`` to avoid 
 unnecessary errors while running tasks (check
-[https://docs.python.org/multiprocessing.html](https://docs.python.org/3/library/multiprocessing.html#using-a-pool-of-workers), 
-[https://github.com/](https://github.com/ipython/ipython/issues/10894)).
+[python.org](https://docs.python.org/3/library/multiprocessing.html#using-a-pool-of-workers), 
+[github](https://github.com/ipython/ipython/issues/10894)).
 
 
 #### References

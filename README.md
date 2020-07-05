@@ -73,10 +73,10 @@ and returns the list of all the return values of the tasks.
 
 > It's that simple! We take care of all your Pooling processes and you do your work!
 
-For more information, see [Documentation]().
+For more information, see [Documentation](https://utile.readthedocs.io/en/latest/documentation/).
 ## Contribution
 We encourage anyone who comes up with new ideas using decorators  
-to [contribute](https://github.com/j0fiN) and collaborate (do star the repo if you like it !).
+to [contribute](https://github.com/j0fiN/utile) and collaborate (do star the repo if you like it !).
 
 ## Licences
 The code in this project is licensed under MIT license. See [LICENSE](https://github.com/j0fiN/Server_Utility/blob/master/LICENSE) for more information.
