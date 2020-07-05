@@ -23,16 +23,16 @@ class TestExample(unittest.TestCase):
         self.assertEqual(200, get_requester('https://unsplash.com/photos/A-NVHPka9Rk/download?force=true&w=640'))
 
     def test_example_2_knc(self):
-        self.assertGreater(knc_modeler(), 0.85)
+        self.assertGreater(knc_modeler(), 0.80)
 
     def test_example_2_svc(self):
-        self.assertGreater(svc_modeler(), 0.85)
+        self.assertGreater(svc_modeler(), 0.80)
 
     def test_example_2_rfc(self):
-        self.assertGreater(rfc_modeler(), 0.85)
+        self.assertGreater(rfc_modeler(), 0.80)
 
     def test_example_2_gnb(self):
-        self.assertGreater(gnb_modeler(), 0.85)
+        self.assertGreater(gnb_modeler(), 0.80)
 
     def test_example_2_fitter(self):
         self.assertEqual(str(type(fitter())), "<class 'list'>")
