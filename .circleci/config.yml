@@ -12,9 +12,5 @@ jobs:
          echo CircleCi
          pip install -r requirements/test.txt
          cd tests
-         coverage run test_processor.py
-         codecov
-         coverage run test_threader.py
-         codecov
-         coverage run test_examples.py
-         codecov
+         coverage run test.py
+         coverage
