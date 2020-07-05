@@ -1,8 +1,12 @@
 # utile
 ![utile-Logo](https://github.com/j0fiN/Server_Utility/blob/master/docs/utile_logo2.png)
 ---
-*The python package which eases your ```<codeflow>``` using `@decorators`.*
-  
+*The python package which eases your ```<codeflow>``` using `@decorators`.*  
+
+[![Read the Docs](https://img.shields.io/readthedocs/utile?color=informational&logo=Read%20the%20Docs&style=flat-square)](https://utile.readthedocs.io/)
+[![CircleCI](https://img.shields.io/circleci/build/github/j0fiN/utile/master?logo=circleCI&style=flat-square)](https://app.circleci.com/pipelines/github/j0fiN/utile)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/j0fiN/utile/CI-utile?logo=github&style=flat-square)](https://github.com/j0fiN/utile/actions?query=workflow%3ACI-utile)
+[![GitHub](https://img.shields.io/github/license/j0fiN/utile?color=informational&style=flat-square)](https://github.com/j0fiN/utile/blob/master/LICENSE)
 ---
 ## Installation
 Install with:  
@@ -78,8 +82,6 @@ For more information, see [Documentation](https://utile.readthedocs.io/en/latest
 We encourage anyone who comes up with new ideas using decorators  
 to [contribute](https://github.com/j0fiN/utile) and collaborate (do star the repo if you like it !).
 
-## Licences
-The code in this project is licensed under MIT license. See [LICENSE](https://github.com/j0fiN/Server_Utility/blob/master/LICENSE) for more information.
 
 
 
