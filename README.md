@@ -7,7 +7,7 @@
 [![CircleCI](https://img.shields.io/circleci/build/github/j0fiN/utile/master?logo=circleCI&style=flat-square)](https://app.circleci.com/pipelines/github/j0fiN/utile)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/j0fiN/utile/CI-utile?logo=github&style=flat-square)](https://github.com/j0fiN/utile/actions?query=workflow%3ACI-utile)
 [![GitHub](https://img.shields.io/github/license/j0fiN/utile?color=informational&style=flat-square)](https://github.com/j0fiN/utile/blob/master/LICENSE)
-![Codecov](https://img.shields.io/codecov/c/github/j0fiN/utile?logo=codecov&style=flat-square)
+[![Codecov](https://img.shields.io/codecov/c/github/j0fiN/utile?logo=codecov&style=flat-square)](https://codecov.io/gh/j0fiN/utile/commits)
 ---
 ## Installation
 Install with:  
