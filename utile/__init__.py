@@ -10,5 +10,8 @@ The python package which eases your <codeflow> using @decorators.
 @processor(funcs, func_result=False, get_result=False)
     A Frame-Determined decorator to spring up number of CPU bound tasks.
 
-For more info: https://
+For more info: https://pypi.org/project/utile/
 """
+from .Processor import processor
+from .Threader import threader
+from .Timer import timer
