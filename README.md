@@ -8,9 +8,12 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/j0fiN/utile/CI-utile?logo=github&style=flat-square)](https://github.com/j0fiN/utile/actions?query=workflow%3ACI-utile)
 [![GitHub](https://img.shields.io/github/license/j0fiN/utile?color=informational&style=flat-square)](https://github.com/j0fiN/utile/blob/master/LICENSE)
 [![Codecov](https://img.shields.io/codecov/c/github/j0fiN/utile?logo=codecov&style=flat-square)](https://codecov.io/gh/j0fiN/utile/commits)
-[![Python](https://img.shields.io/badge/For%20the%20love%20of%20code-Python-blue?style=for-the-badge&logo=Python)](https://www.python.org/)
 [![PyPI](https://img.shields.io/pypi/v/utile?logo=Pypi&style=flat-square)](https://pypi.org/project/utile/1.0/)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/utile?logo=pypi&style=flat-square)
+[![git](https://img.shields.io/badge/make%20it%20better-Contribute-blue?style=flat-square&logo=git)](#)
+<p align="center">
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/For%20the%20love%20of%20code-Python-blue?style=for-the-badge&logo=Python"></a>
+
 ---
 ## Installation
 Install with:  
