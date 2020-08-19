@@ -15,3 +15,4 @@ For more info: https://pypi.org/project/utile/
 from .Processor import processor
 from .Threader import threader
 from .Timer import timer
+from .Tester import tester
