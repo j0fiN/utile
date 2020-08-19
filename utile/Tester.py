@@ -1,4 +1,4 @@
-def tester(return_test=False, test=False):
+def tester(return_test=False):
     import unittest
     from functools import wraps
 
@@ -6,7 +6,7 @@ def tester(return_test=False, test=False):
 
         @wraps(func)
         def wrapper(*args: 'arguments', **kwargs: 'keyword arguments') -> 'function':
-            if test is True:
+            if kwargs['test'] is True:
                 if return_test is not None:
                     RESULT = func(*args, **kwargs)
                     test_model = unittest.TestCase()
@@ -22,10 +22,10 @@ def tester(return_test=False, test=False):
 
 
 if __name__ == '__main__':
-    @tester(test=True, return_test={'value': 12,
-                                    'type': int})
-    def foo():
-        return 12
+    @tester(return_test={'value': 21,
+                         'type': int})
+    def foo(a, b, **_):
+        return a + b
 
 
-    foo()
+    foo(10, 11, test=True)
