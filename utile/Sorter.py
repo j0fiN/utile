@@ -14,5 +14,4 @@ def sort(arr: list) -> list:
 
 
 if __name__ == '__main__':
-    arrr = ["ap", "ca", "aap"]
-    print(sort(arrr))
+    pass
