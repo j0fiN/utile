@@ -3,7 +3,7 @@ import rusty_sorter as so
 
 def sort(arr: list) -> list:
     """
-    Timsort built in rust.
+    Timsort built in Rust.
     """
     if str(type(arr[0])) == "<class 'int'>":
         return so.sort_int(arr)

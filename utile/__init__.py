@@ -16,3 +16,4 @@ from .Processor import processor
 from .Threader import threader
 from .Timer import timer
 from .Tester import tester
+from .Sorter import sort
