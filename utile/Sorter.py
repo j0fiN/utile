@@ -1,7 +1,7 @@
-import rusty_sorter as so
 
 
 def sort(arr: list) -> list:
+    import rusty_sorter as so
     """
     Timsort built in Rust.
     """
@@ -14,4 +14,4 @@ def sort(arr: list) -> list:
 
 
 if __name__ == '__main__':
-    pass
+    print(sort([1, 3, 4, 2, 5]))
