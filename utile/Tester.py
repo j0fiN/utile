@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Author : JOFIN F ARCHBALD
+"""
+
+
 def tester(return_test=None):
     import unittest
     from functools import wraps
@@ -25,7 +31,6 @@ if __name__ == '__main__':
     @tester(return_test={'value': 21,
                          'type': int})
     def foo(a, b, **_):
-
         return a + b
 
 
