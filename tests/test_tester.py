@@ -2,12 +2,12 @@ import unittest
 import sys
 
 sys.path.append('..')
-from utile import * # noqa
+import utile # noqa
 
 
 class TestTester(unittest.TestCase):
 
-    @tester(return_test={
+    @utile.Tester.tester(return_test={
         'value': 42,
         'type': int
     })
