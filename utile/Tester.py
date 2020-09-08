@@ -19,6 +19,7 @@ def tester(return_test=None):
                     test_model.assertEqual(RESULT, return_test['value'], msg="Not equal")
                     test_model.assertEqual(type(RESULT), return_test['type'], msg="Not equal")
                     print("return test successful")
+                    return RESULT, return_test
             else:
                 return func(*args, **kwargs)
 
@@ -28,10 +29,11 @@ def tester(return_test=None):
 
 
 if __name__ == '__main__':
-    @tester(return_test={'value': 21,
-                         'type': int})
-    def foo(a, b, **_):
-        return a + b
-
-
-    foo(10, 11, test=True)
+    # @tester(return_test={'value': 21,
+    #                      'type': int})
+    # def foo(a, b, **_):
+    #     return a + b
+    #
+    #
+    # foo(10, 11, test=True)
+    pass
