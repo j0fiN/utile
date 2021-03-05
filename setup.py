@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="utile",  # Replace with your own username
-    version="v1.0",
+    version="v1.1.0",
     author="Jofin F Archbald",
     author_email="jofinfab@gmail.com",
     description="The python package which eases your <codeflow> using decorators",
@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     project_urls={
         'Documentation': 'https://utile.readthedocs.io/',
-        'Say Thanks!': 'http://j0fiN.github.io/home/',
+        'Say Thanks!': 'https://jofin-f-archbald.herokuapp.com/',
         'Source': 'https://github.com/j0fiN/utile/',
     },
     classifiers=[
