@@ -4,4 +4,7 @@ nav:
   - Documentation: documentation.md
   - Examples: examples.md
   - GuideLines: guidelines.md
-theme: readthedocs
+theme:
+    name: mkdocs
+    highlightjs: true
+    hljs_style: dracula
