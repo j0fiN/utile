@@ -1,5 +1,15 @@
 # Documentation
 ---
+## Sorter.sort(list)
+> **Sort function inplemented in rust language for speed (in ascending order)**
+
+##### Arguments:
+**store:**  a list(wont accept lists with multiple datatypes).  
+
+##### Returns:  
+**List:** the sorted list
+
+---
 ## @Timer.timer(store=False, round_off=10)
 > **Decorator which print execution time of any function.**
 
