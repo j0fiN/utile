@@ -2,6 +2,9 @@
 """
 The python package which eases your <codeflow> using @decorators.
 
+Sorter.sort(List)
+    sorts the list in ascending order.
+
 @timer(store=False, round_off=10)
     Decorator which print execution time of any function.
 

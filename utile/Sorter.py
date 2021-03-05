@@ -16,7 +16,3 @@ def sort(arr: list) -> list:
     else:
         return so.sort_str(arr)
 
-
-if __name__ == '__main__':
-    # print(sort([1, 3, 4, 2, 5]))
-    pass
