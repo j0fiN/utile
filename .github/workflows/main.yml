@@ -5,9 +5,9 @@ name: CI-utile
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, Development ]
   pull_request:
-    branches: [ master ]
+    branches: [ master, Development ]
 
 
 jobs:

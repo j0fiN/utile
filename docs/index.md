@@ -2,7 +2,7 @@
 ![utile-Logo](utile_logo2.png)
 ---
 *The python package which eases your ```<codeflow>``` using `@decorators`.*
-  
+#### Now with integration with Rust! Check out the [Documentation!](https://utile.readthedocs.io/en/latest/documentation/)
 ---
 ## Installation
 Install with:  

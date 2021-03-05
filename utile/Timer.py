@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+Author : JOFIN F ARCHBALD
+"""
+
 
 def timer(store: bool = False, round_off: int = 10) -> 'function':
     """

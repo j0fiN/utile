@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+Author : JOFIN F ARCHBALD
+"""
+
 
 def processor(funcs: dict, func_result: bool = False, get_result: bool = False) -> 'function':
     """

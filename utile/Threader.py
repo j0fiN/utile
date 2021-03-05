@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+"""
+Author : JOFIN F ARCHBALD
+"""
+
 
 def threader(funcs: dict, func_result: bool = False) -> 'function':
     """
