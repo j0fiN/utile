@@ -121,7 +121,7 @@ class Test(unittest.TestCase):
         base()
         f = time.time()
         self.assertGreater(60, f - s)
-
+    
 
 if __name__ == '__main__':
     unittest.main()
