@@ -1,1 +1,2 @@
-recursive-include module *.pyd
+include MANIFEST.in
+recursive-include utile/timsort *
