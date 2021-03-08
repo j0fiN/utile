@@ -3,7 +3,7 @@ from setuptools_rust import RustExtension, Binding
 
 
 setup(
-    name="timsort",
+    name="timsortyer",
     version="0.1.0",
     classifiers=[
         "License :: OSI Approved :: MIT License",
@@ -14,8 +14,8 @@ setup(
         "Operating System :: POSIX",
         "Operating System :: MacOS :: MacOS X",
     ],
-    packages=["timsort"],
-    rust_extensions=[RustExtension("timsort._timsort", "Cargo.toml", debug=False, binding=Binding.PyO3)],
+    packages=["timsortyer"],
+    rust_extensions=[RustExtension("timsortyer._timsortyer", "Cargo.toml", debug=False, binding=Binding.PyO3)],
     include_package_data=True,
     zip_safe=False,
 )

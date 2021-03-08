@@ -27,7 +27,7 @@ fn sort_str(py:Python, mut array: Vec<String>) -> PyResult<PyObject>{
 }
 
 #[pymodule]
-fn _timsort(_py: Python, m: &PyModule) -> PyResult<()> {
+fn _timsortyer(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(sort_int))?;
     m.add_wrapped(wrap_pyfunction!(sort_float))?;
     m.add_wrapped(wrap_pyfunction!(sort_str))?;
