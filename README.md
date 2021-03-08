@@ -2,7 +2,7 @@
 ![utile-Logo](https://github.com/j0fiN/Server_Utility/blob/master/docs/utile_logo2.png)
 ---
 *The python package which eases your ```<codeflow>``` using `@decorators`.*  
-### Now integrated with rust!  (WILL SOON BE RELEASED ->docs updated)
+### Now integrated with rust!  (docs updated)
 ---
 [![Read the Docs](https://img.shields.io/readthedocs/utile?color=informational&logo=Read%20the%20Docs&style=flat-square)](https://utile.readthedocs.io/)
 [![CircleCI](https://img.shields.io/circleci/build/github/j0fiN/utile/master?logo=circleCI&style=flat-square)](https://app.circleci.com/pipelines/github/j0fiN/utile)
@@ -86,6 +86,11 @@ and returns the list of all the return values of the tasks.
 > It's that simple! We take care of all your Pooling processes and you do your work!
 
 For more information, see [Documentation](https://utile.readthedocs.io/en/latest/documentation/).
+
+## Disclaimer
+- Rust compiler must be installed in your machine for the binding to work.
+- The error pops up
+
 ## Contribution
 We encourage anyone who comes up with new ideas using decorators  
 to [contribute](https://github.com/j0fiN/utile) and collaborate (do star the repo if you like it !).
