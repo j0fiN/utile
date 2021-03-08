@@ -4,3 +4,4 @@ sklearn
 BeautifulSoup4
 html5lib
 setuptools-rust
+timsortyer

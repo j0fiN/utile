@@ -21,4 +21,4 @@ from .Processor import processor
 from .Threader import threader
 from .Timer import timer
 from .Sorter import sort
-from .timsort import *
+# from .timsortyer import *
