@@ -89,7 +89,6 @@ For more information, see [Documentation](https://utile.readthedocs.io/en/latest
 
 ## Disclaimer
 - Rust compiler must be installed in your machine for the binding to work.
-- The error pops up
 
 ## Contribution
 We encourage anyone who comes up with new ideas using decorators  
