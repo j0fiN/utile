@@ -5,7 +5,7 @@ with open("readmepy.md", "r") as fh:
 
 setuptools.setup(
     name="utile",  # Replace with your own username
-    version="v1000.7",
+    version="v1.1",
     author="Jofin F Archbald",
     author_email="jofinfab@gmail.com",
     description="The python package which eases your <codeflow> using decorators",
@@ -29,6 +29,6 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     install_requires=[
-        'timsortyer'
+        'timsortyer==0.1.1'
     ]
 )
