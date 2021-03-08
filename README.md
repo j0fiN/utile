@@ -14,14 +14,19 @@
 [![git](https://img.shields.io/badge/make%20it%20better-Contribute-blue?style=flat-square&logo=git)](#)
 <p align="center">
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/For%20the%20love%20of%20code-Python-blue?style=for-the-badge&logo=Python"></a>
+    <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/For%20the%20love%20of%20code-Rust-brown?style=for-the-badge&logo=Rust"></a>
+</p>
 
 ---
 ## Installation
-Install with:  
-```pip install utile```
-
-For [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb):  
-```!pip install utile```
+```Powershell
+pip install utile
+```  
+---
+***If you dont have rust compiler installed***  
+```bash
+pip install utile==1.0
+```
 ## The art of using decorators
 Decorators is one of the many concepts which makes Python programming amazing. The key usage 
 of decorators is to modify the functionality or state (behavior) of a function. This package brings out a relatively 
@@ -88,7 +93,7 @@ and returns the list of all the return values of the tasks.
 For more information, see [Documentation](https://utile.readthedocs.io/en/latest/documentation/).
 
 ## Disclaimer
-- Rust compiler must be installed in your machine for the binding to work.
+- Rust compiler must be installed in your machine for the binding to work. So use v1.0 if dont dont have rust compiler installed.
 
 ## Contribution
 We encourage anyone who comes up with new ideas using decorators  
